@@ -60,9 +60,8 @@ This milestone focuses on deploying and visualizing outputs generated in earlier
 ---
 
 ## Running the application
-pip install -r requirements.txt
-
-streamlit run app.py
+- pip install -r requirements.txt
+- streamlit run app.py
 
 ---
 

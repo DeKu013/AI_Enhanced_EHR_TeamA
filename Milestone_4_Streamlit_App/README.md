@@ -42,15 +42,6 @@ This milestone focuses on deploying and visualizing outputs generated in earlier
 
 ---
 
-## Project Structure
-Milestone_4_Streamlit_App/
-├── app.py
-├── requirements.txt
-├── data/
-│ ├── images/
-│ └── notes/
-
----
 
 ## Input Data Format
 ```json
@@ -70,6 +61,7 @@ Milestone_4_Streamlit_App/
 
 ## Running the application
 pip install -r requirements.txt
+
 streamlit run app.py
 
 ---

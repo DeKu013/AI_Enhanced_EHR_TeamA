@@ -18,3 +18,7 @@ The project follows an end-to-end pipeline consisting of four major stages, each
 - Reduced documentation effort through automated clinical note generation using structured EHR data and Generative AI.
 - Streamlined ICD-10 coding integrated within the clinical documentation workflow, enabling faster and more consistent diagnosis classification.
 - Minimized repetitive administrative tasks by automating key EHR processes, supporting greater clinician focus on patient care in a real-world deployment scenario.
+
+---
+## LIVE DEMO
+https://ikshamalhotra-team-a-ai-enhanced-ehr-imaging-documentation.streamlit.app/

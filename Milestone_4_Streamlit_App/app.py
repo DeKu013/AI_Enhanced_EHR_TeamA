@@ -87,14 +87,22 @@ st.markdown("""
 ---
 """)
 
-NOTES_DIR = "data/notes"
-IMAGES_DIR = "data/images"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-if not os.path.exists(NOTES_DIR):
-    st.error("Clinical notes directory not found.")
-    st.stop()
+NOTES_DIR = os.path.join(BASE_DIR, "data", "notes")
+IMAGES_DIR = os.path.join(BASE_DIR, "data", "images")
+
+os.makedirs(NOTES_DIR, exist_ok=True)
+os.makedirs(IMAGES_DIR, exist_ok=True)
 
 patient_files = [f for f in os.listdir(NOTES_DIR) if f.endswith(".json")]
+
+if not patient_files:
+    st.warning("No clinical records available yet.")
+    st.info("Please upload or generate patient data to continue.")
+    st.stop()
+
+
 patient_ids = sorted([f.replace(".json", "") for f in patient_files])
 
 st.sidebar.markdown("## 🏥 Clinical Dashboard")
